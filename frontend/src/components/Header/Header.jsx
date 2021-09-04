@@ -7,6 +7,8 @@ import Toolbar from '@material-ui/core/Toolbar';
 import logo from '../../assets/img/logo1.png'
 import { push } from 'connected-react-router'
 import HeaderMenus from './HeaderMenu';
+import HeaderUserMenu from './HeaderUserMenu';
+
 
 const useStyles = makeStyles({
     root:{
@@ -41,6 +43,7 @@ const Header = () => {
                     {/* {isSignedIn && ( */}
                         <div className={classes.iconButtons}>
                             <HeaderMenus />
+                            <HeaderUserMenu />
                         </div>
                     {/* )} */}
                 </Toolbar>
